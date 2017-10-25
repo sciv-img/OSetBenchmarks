@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OSet",
+        "repositoryURL": "/Users/kenji/languages/swift/OSet",
+        "state": {
+          "branch": null,
+          "revision": "da5aeed7f7923b937257bf20266124d39325ede6",
+          "version": "0.3.5"
+        }
+      },
+      {
+        "package": "RandomKit",
+        "repositoryURL": "https://github.com/nvzqz/RandomKit",
+        "state": {
+          "branch": null,
+          "revision": "06c51cbf8816a5f682aba03da353daf5640830ca",
+          "version": "5.2.3"
+        }
+      },
+      {
+        "package": "Threadly",
+        "repositoryURL": "https://github.com/nvzqz/Threadly.git",
+        "state": {
+          "branch": null,
+          "revision": "261c101fd0a8a42dc3e16fb303d3a79f6e06100f",
+          "version": "1.2.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

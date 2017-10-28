@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "OrderedSet",
+        "repositoryURL": "https://github.com/bradhilton/OrderedSet",
+        "state": {
+          "branch": null,
+          "revision": "027fb128af31e8951cbbde9c377b18c90d8189cc",
+          "version": null
+        }
+      },
+      {
         "package": "RandomKit",
         "repositoryURL": "https://github.com/nvzqz/RandomKit",
         "state": {

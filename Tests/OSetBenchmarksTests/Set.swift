@@ -45,7 +45,7 @@ class SetBenchmarks: XCTestCase {
     }
 
     func testUnion() {
-        let (input1_1, input1_2, _) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, _) = BenchmarksInputs.inputsSmall
 
         let set1 = Set(input1_1)
         let set2 = Set(input1_2)
@@ -56,7 +56,7 @@ class SetBenchmarks: XCTestCase {
     }
 
     func testIntersection() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let set1 = Set(input1_1 + input1_2 + input2)
         let set2 = Set(input1_2)
@@ -67,7 +67,7 @@ class SetBenchmarks: XCTestCase {
     }
 
     func testSymmetricDifference() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let set1 = Set(input1_1 + input1_2)
         let set2 = Set(input1_2 + input2)
@@ -78,7 +78,7 @@ class SetBenchmarks: XCTestCase {
     }
 
     func testSubtracting() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let set1 = Set(input1_1 + input1_2 + input2)
         let set2 = Set(input1_2)

@@ -57,7 +57,7 @@ class BradhiltonBenchmarks: XCTestCase {
     }
 
     func testIntersection() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let orderedset1 = OrderedSet(input1_1 + input1_2 + input2)
         let orderedset2 = OrderedSet(input1_2)
@@ -68,7 +68,7 @@ class BradhiltonBenchmarks: XCTestCase {
     }
 
     func testSymmetricDifference() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let orderedset1 = OrderedSet(input1_1 + input1_2)
         let orderedset2 = OrderedSet(input1_2 + input2)
@@ -79,7 +79,7 @@ class BradhiltonBenchmarks: XCTestCase {
     }
 
     func testSubtracting() {
-        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, input2) = BenchmarksInputs.inputsSmall
 
         let orderedset1 = OrderedSet(input1_1 + input1_2 + input2)
         let orderedset2 = OrderedSet(input1_2)

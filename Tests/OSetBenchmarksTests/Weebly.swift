@@ -46,7 +46,7 @@ class WeeblyBenchmarks: XCTestCase {
     }
 
     func testUnion() {
-        let (input1_1, input1_2, _) = BenchmarksInputs.inputsMedium
+        let (input1_1, input1_2, _) = BenchmarksInputs.inputsSmall
 
         let orderedset1 = OrderedSet(sequence: input1_1)
         let orderedset2 = OrderedSet(sequence: input1_2)

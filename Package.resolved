@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "OSet",
-        "repositoryURL": "/Users/kenji/languages/swift/OSet",
+        "repositoryURL": "https://github.com/sciv-img/OSet",
         "state": {
           "branch": null,
-          "revision": "da5aeed7f7923b937257bf20266124d39325ede6",
-          "version": "0.3.5"
+          "revision": "66429b4564c552188c4564ad81c6b16f4fac5a62",
+          "version": "0.4.0"
         }
       },
       {

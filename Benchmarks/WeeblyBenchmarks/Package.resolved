@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OrderedSet",
+        "repositoryURL": "https://github.com/Weebly/OrderedSet",
+        "state": {
+          "branch": null,
+          "revision": "07d99831674bca6bf69967b70ced6cc19ca346ec",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "swift-gen",
+        "repositoryURL": "https://github.com/pointfreeco/swift-gen",
+        "state": {
+          "branch": null,
+          "revision": "fa11f64f5473d6f37f5f477f2c7929e527589634",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -86,17 +86,17 @@ function chart(filename, data) {
 var results = new Map();
 var osetResults = [];
 
-const swift = spawn("swift", ["test"]);
+const swift = spawn("sh", ["mk"]);
 
 swift.stderr.on('data', (data) => {
     data = data.toString();
     if(!data.includes("measured")) {
         return;
     }
-    data = data.split(".swift", 2);
-    var collectionName = data[0].split("/").pop();
+    data = data.split(" test", 2);
+    var collectionName = data[0].split(".").pop().slice(0, -10);
     data = data[1].split("]'", 2);
-    var functionName = data[0].split("test").pop();
+    var functionName = data[0];
     var time = data[1].split(", ", 3)[1].split(": ").pop();
 
     console.log(collectionName, functionName, time);

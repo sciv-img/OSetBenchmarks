@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OrderedSet",
+        "repositoryURL": "https://github.com/Saklad5/OrderedSet",
+        "state": {
+          "branch": "patch-1",
+          "revision": "c6490dddf0ec3751b24b9ff47d65724597490acb",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-gen",
+        "repositoryURL": "https://github.com/pointfreeco/swift-gen",
+        "state": {
+          "branch": null,
+          "revision": "fa11f64f5473d6f37f5f477f2c7929e527589634",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

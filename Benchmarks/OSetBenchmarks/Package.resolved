@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OSet",
+        "repositoryURL": "https://github.com/sciv-img/OSet",
+        "state": {
+          "branch": null,
+          "revision": "2684495c42cdbb3958c7cb149554639c815f9bb2",
+          "version": "0.6.1"
+        }
+      },
+      {
+        "package": "swift-gen",
+        "repositoryURL": "https://github.com/pointfreeco/swift-gen",
+        "state": {
+          "branch": null,
+          "revision": "fa11f64f5473d6f37f5f477f2c7929e527589634",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

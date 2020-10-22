@@ -1,7 +1,16 @@
 import XCTest
-import OSetBenchmarks
+import OrderedSet
+import common // BenchmarksInputs
 
 class WeeblyBenchmarks: XCTestCase {
+    func testInit() {
+        let (input1_1, _, _) = BenchmarksInputs.inputsBig
+
+        self.measure {
+            _ = OrderedSet(sequence: input1_1)
+        }
+    }
+
     func testContains() {
         let (input1_1, _, _) = BenchmarksInputs.inputsBig
 
@@ -18,7 +27,7 @@ class WeeblyBenchmarks: XCTestCase {
         let orderedset1 = OrderedSet(sequence: input1_1)
 
         self.measure {
-            let o1 = orderedset1
+            var o1 = orderedset1
             o1.append("SOMEOTHERSTRINGTEST")
         }
     }
@@ -29,7 +38,7 @@ class WeeblyBenchmarks: XCTestCase {
         let orderedset1 = OrderedSet(sequence: input1_1)
 
         self.measure {
-            let o1 = orderedset1
+            var o1 = orderedset1
             _ = o1.remove(input1_1[102400])
         }
     }
@@ -40,7 +49,7 @@ class WeeblyBenchmarks: XCTestCase {
         let orderedset1 = OrderedSet(sequence: input1_1)
 
         self.measure {
-            let o1 = orderedset1
+            var o1 = orderedset1
             o1.append("SOMEOTHERSTRINGTEST")
         }
     }
@@ -63,7 +72,7 @@ class WeeblyBenchmarks: XCTestCase {
         let orderedset2 = OrderedSet(sequence: input1_2)
 
         self.measure {
-            let orderedset = OrderedSet<String>()
+            var orderedset = OrderedSet<String>()
             for other in orderedset2 {
                 if orderedset1.contains(other) {
                     orderedset.append(other)
@@ -79,7 +88,7 @@ class WeeblyBenchmarks: XCTestCase {
         let orderedset2 = OrderedSet(sequence: input1_2 + input2)
 
         self.measure {
-            let orderedset = orderedset1
+            var orderedset = orderedset1
             for other in orderedset2 {
                 if orderedset1.contains(other) {
                     orderedset.remove(other)

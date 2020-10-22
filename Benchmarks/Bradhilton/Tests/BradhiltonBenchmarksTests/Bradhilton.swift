@@ -1,7 +1,16 @@
 import XCTest
 import OrderedSet
+import common // BenchmarksInputs
 
 class BradhiltonBenchmarks: XCTestCase {
+    func testInit() {
+        let (input1_1, _, _) = BenchmarksInputs.inputsBig
+
+        self.measure {
+            _ = OrderedSet(input1_1)
+        }
+    }
+
     func testContains() {
         let (input1_1, _, _) = BenchmarksInputs.inputsBig
 

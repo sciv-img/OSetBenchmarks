@@ -1,6 +1,15 @@
 import XCTest
+import common // BenchmarksInputs
 
 class ArrayBenchmarks: XCTestCase {
+    func testInit() {
+        let (input1_1, _, _) = BenchmarksInputs.inputsBig
+
+        self.measure {
+            _ = Array(input1_1)
+        }
+    }
+
     func testContains() {
         let (input1_1, _, _) = BenchmarksInputs.inputsBig
 

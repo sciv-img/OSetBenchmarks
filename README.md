@@ -14,19 +14,21 @@ Goal: Subsecond timings for all of the following.
 * Symmetric Difference of two OSets of 100.000 entries each.
 * Iteration over an OSet of 100.000 entries.
 
-Other than that, comparison benchmarks were performed against stdlib `Array` and `Set` (as reference) and two other Ordered Set implementations found, [`Bradhilton`](https://github.com/bradhilton/OrderedSet) and [`Weebly`](https://github.com/Weebly/OrderedSet). The last one is not adapted to work with SwiftPM, but it is one file, so it was copied over to this repository, without changes.
+Other than that, comparison benchmarks were performed against stdlib `Array` and `Set` (as reference) and two other Ordered Set implementations found, [`Bradhilton`](https://github.com/bradhilton/OrderedSet) and [`Weebly`](https://github.com/Weebly/OrderedSet).
 
 Due to some operations being very slow, to prevent comparison benchmarking from taking hours (literally) and producing almost unreadable results, some operations were stepped down in number of entries to 2.000. Said operations are: *Union*, *Intersection*, *Symmetric Difference* and *Subtracting*.
 
 # Run it yourself
 
-Run benchmarks alone with `swift test`.
+Run benchmarks alone with `./mk`.
 
-Create charts with `./chart.js` [requires `nodejs` and `vega` library].
+Create charts with `./chart.js` [requires `nodejs` and `vega`+`canvas` libraries, might also need `pango` system package].
 
 # OSet Results
 ![OSetOnlyBenchmarks](Results/oset.png)
 # Comparison Results
+# Init
+![Init](Results/Init.png)
 ## Insert
 ![Insert](Results/Insert.png)
 ## Update

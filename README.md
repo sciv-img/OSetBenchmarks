@@ -14,7 +14,7 @@ Goal: Subsecond timings for all of the following.
 * Symmetric Difference of two OSets of 100.000 entries each.
 * Iteration over an OSet of 100.000 entries.
 
-Other than that, comparison benchmarks were performed against stdlib `Array` and `Set` (as reference) and two other Ordered Set implementations found, [`Bradhilton`](https://github.com/bradhilton/OrderedSet) and [`Weebly`](https://github.com/Weebly/OrderedSet).
+Other than that, comparison benchmarks were performed against stdlib `Array` and `Set` (as reference) and three other Ordered Set implementations found, [`Bradhilton`](https://github.com/bradhilton/OrderedSet), [`Weebly`](https://github.com/Weebly/OrderedSet) and [`Turbolent`](https://github.com/turbolent/OrderedSet).
 
 Due to some operations being very slow, to prevent comparison benchmarking from taking hours (literally) and producing almost unreadable results, some operations were stepped down in number of entries to 2.000. Said operations are: *Union*, *Intersection*, *Symmetric Difference* and *Subtracting*.
 

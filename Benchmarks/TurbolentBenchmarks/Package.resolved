@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "OrderedSet",
+        "repositoryURL": "https://github.com/turbolent/OrderedSet",
+        "state": {
+          "branch": null,
+          "revision": "2a45c3e1a247be1f874c0bf0d4abd8ac7d747d8b",
+          "version": "0.2.0"
+        }
+      },
+      {
+        "package": "swift-gen",
+        "repositoryURL": "https://github.com/pointfreeco/swift-gen",
+        "state": {
+          "branch": null,
+          "revision": "fa11f64f5473d6f37f5f477f2c7929e527589634",
+          "version": "0.3.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

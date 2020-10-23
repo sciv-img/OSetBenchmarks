@@ -50,7 +50,7 @@ class TurbolentBenchmarks: XCTestCase {
 
         self.measure {
             var o1 = oset1
-            o1.update(with: "SOMEOTHERSTRINGTEST")
+            _ = o1.update(with: "SOMEOTHERSTRINGTEST")
         }
     }
 

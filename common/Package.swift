@@ -7,7 +7,7 @@ let package = Package(
         .library(name: "common", targets: ["common"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/pointfreeco/swift-gen", .exact("0.3.0")),
+        .package(url: "https://github.com/pointfreeco/swift-gen", .exact("0.4.0")),
     ],
     targets: [
         .target(name: "common", dependencies: ["Gen"], path: "Sources"),

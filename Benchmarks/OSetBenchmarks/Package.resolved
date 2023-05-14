@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/sciv-img/OSet",
         "state": {
           "branch": null,
-          "revision": "2684495c42cdbb3958c7cb149554639c815f9bb2",
-          "version": "0.6.1"
+          "revision": "8cd4d8e9a5d197f78fb52e2c6970b8e86584e360",
+          "version": "0.7.0"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/pointfreeco/swift-gen",
         "state": {
           "branch": null,
-          "revision": "fa11f64f5473d6f37f5f477f2c7929e527589634",
-          "version": "0.3.0"
+          "revision": "5bd20fb662e1ead7ee47df6bb0a15398295f2e06",
+          "version": "0.4.0"
         }
       }
     ]

@@ -1,6 +1,7 @@
 Benchmarks sources and results for [OSet](https://github.com/sciv-img/OSet).
 
-Testing Machine: MacBook Pro, Early 2015 (i5@2.7 GHz).
+Testing Machine: MacBook M1 Pro 10-core.
+Swift version used: 5.8.
 
 Goal: Subsecond timings for all of the following.
 
@@ -22,7 +23,8 @@ Due to some operations being very slow, to prevent comparison benchmarking from 
 
 Run benchmarks alone with `./mk`.
 
-Create charts with `./chart.js` [requires `nodejs` and `vega`+`canvas` libraries, might also need `pango` system package].
+Creating charts requires `nodejs >= 16`.
+Do it with `npm install`, then `./chart.js`.
 
 # OSet Results
 ![OSetOnlyBenchmarks](Results/oset.png)

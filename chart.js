@@ -3,6 +3,7 @@
 const vega = require('vega');
 const fs = require('fs');
 const { spawn } = require('child_process');
+const readline = require('readline');
 
 function chart(filename, data) {
     const spec = {
@@ -87,9 +88,12 @@ var results = new Map();
 var osetResults = [];
 
 const swift = spawn("sh", ["mk"]);
+const stdout = readline.createInterface({
+	input: swift.stdout,
+	crlfDelay: Infinity,
+});
 
-swift.stderr.on('data', (data) => {
-    data = data.toString();
+stdout.on('line', (data) => {
     if(!data.includes("measured")) {
         return;
     }
@@ -101,7 +105,7 @@ swift.stderr.on('data', (data) => {
 
     console.log(collectionName, functionName, time);
     if(functionName.startsWith("OSetOnly")) {
-        osetResults.push({"x": time, "y": functionName.substr(8)});
+        osetResults.push({"x": time, "y": functionName.substring(8)});
     } else {
         if(!results.has(functionName)) {
             results.set(functionName, []);
@@ -112,7 +116,7 @@ swift.stderr.on('data', (data) => {
 
 function hasName(arr, name) {
     for(const a of arr) {
-        if(a["y"] == name) {
+        if(a["y"] === name) {
             return true;
         }
     }
@@ -120,7 +124,7 @@ function hasName(arr, name) {
 }
 
 swift.on('close', (code) => {
-    if(code != 0) {
+    if(code !== 0) {
         process.exit(code);
     }
 
@@ -132,7 +136,7 @@ swift.on('close', (code) => {
 
     for(const [name, values] of results.entries()) {
         for(const value of values) {
-            if(value["y"] == "OSet" && !hasName(osetResults, name)) {
+            if(value["y"] === "OSet" && !hasName(osetResults, name)) {
                 osetResults.push({"x": value["x"], "y": name});
             }
         }

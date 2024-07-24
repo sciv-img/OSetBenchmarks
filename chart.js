@@ -12,6 +12,7 @@ function chart(filename, data) {
         "height": 300,
         "padding": 4,
         "autosize": "fit",
+        "background": "white",
 
         "config": {
             "axis": {

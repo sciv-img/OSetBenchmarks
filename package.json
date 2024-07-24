@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "canvas": "^2.11.2",
-    "vega": "^5.25.0"
+    "vega": "^5.30.0"
   }
 }
